@@ -1,0 +1,10 @@
+2020-03-24
+    - CSharp: Ngôn ngữ lập trình.
+    - DotNet: Môi trường.
+    - Console.WriteLine() vs Debug.WriteLine()
+        màn hình                màn hình Debug
+    - go to: Nhảy tới nhãn chỉ định.
+    - as, is, parse, ...
+    - foreach
+    - List<>() sau khi dùng nên Close()
+    
