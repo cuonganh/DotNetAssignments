@@ -1,10 +1,13 @@
 using System;
 
-namespace Loop{
-    class program{
-        static void Main(String[] args){
+namespace Loop
+{
+    class program
+    {
+        static void Main(String[] args)
+        {
             int n = 0;
-            float s = 1; 
+            float s = 1;
             float x = 0;
             float giaiThua = 1;
             float luyThua = 1;
@@ -13,21 +16,28 @@ namespace Loop{
             Console.WriteLine("n = "); n = Console.nextInt();
             Console.WriteLine("x = "); x = Console.nextFloat();
 
-            if(x != 0){
-                for (int i = 1; i <= n; i++){
-                    giaiThua = giaiThua*i;
-                    luyThua = luyThua*x;
-                    s = s + giaiThua/luyThua;                       
+            if (x != 0)
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    giaiThua = giaiThua * i;
+                    luyThua = luyThua * x;
+                    s = s + giaiThua / luyThua;
                 }
                 Console.WriteLine("Tong S = " + s);
             }
 
-            if(x == 0 && n == 0){
-                Console.WriteLine("S = 1");
-            }
-            
-            else{
-                Console.WriteLine("Khong xac dinh tong S");
+            else
+            {
+                if (n == 0)
+                {
+                    Console.WriteLine("S = 1");
+                }
+                else
+                {
+                    Console.WriteLine("Khong xac dinh tong S");
+                }
+
             }
         }
     }

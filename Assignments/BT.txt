@@ -1,13 +1,13 @@
 2020-03-24
-    1. PTB2
+    1. PTB2:
     Write a program that reads the coefficients a, b and c 
     of a quadratic equation ax 2+bx+c=0 and solves it (prints its real roots).
 
-    2. Loop
+    2. Loop:
     Write a program that, for a given two integer numbers N and X, 
     calculates the sum S = 1 + 1!/X + 2!/X^2 + … + N!/X^N 
 
-    3. Array
+    3. Array Select Sort:
     Sorting an array means to arrange its elements in increasing order. 
     Write a program to sort an array. Use the "selection sort" algorithm
 

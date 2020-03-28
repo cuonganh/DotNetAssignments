@@ -7,4 +7,7 @@
     - as, is, parse, ...
     - foreach
     - List<>() sau khi dùng nên Close()
-    
+    - Select sort: 
+    Thuật toán tìm giá trị nhỏ nhất trong mảng cho mỗi lần lặp của vòng lặp.
+    Sau đó giá trị nhỏ nhất được hoán đổi với phần tử mảng hiện tại.
+    Thủ tục này được thực hiện cho đến khi mảng được sắp xếp.
