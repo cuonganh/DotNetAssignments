@@ -6,21 +6,26 @@ namespace ArraySelectSort
     {
         static void Main(String[] args)
         {
-            int n = 0;
+            Console.WriteLine("Select sort: ");
             int rd = 0;
+            int n = 0;
             int tmp = 0;
             int smallest = 0;
             int[] arrInt;
-            //int arrInt = new int[10] { 15, 95, 11, 54, 17, 26, 73, 14, 20, 03 };
+            // int arrInt = new int[10] { 15, 95, 11, 54, 17, 26, 73, 14, 20, 03 };
+
+            Console.WriteLine("Input N = ");
+            try{
+               n = Int16.Parse(Console.ReadLine()); 
+            }catch(Exception e){
+                Console.WriteLine(e.Message);
+            }
             
-            Console.WriteLine("Select sort: "); 
-            Console.WriteLine("Input N: ");
-            n = Console.nextInt();
-            arr = new int[n];
+            arrInt = new int[n];
             Random rd = new Random();
 
             Console.Write("Initial array: ");
-            for(int i = 0; i < n; i ++)
+            for (int i = 0; i < arrInt.Length(); i++)
             {
                 arrInt[i] = rd.Next(1, 100);
             }

@@ -13,32 +13,41 @@ namespace Loop
             float luyThua = 1;
 
             Console.WriteLine("Tinh tong S = 1 + 1!/X + 2!/X^2 + … + N!/X^N");
-            Console.WriteLine("n = "); n = Console.nextInt();
-            Console.WriteLine("x = "); x = Console.nextFloat();
+            Console.WriteLine("n = "); n = Int16.Parse(Console.ReadLine());
+            Console.WriteLine("x = "); x = float.Parse(Console.ReadLine());
 
-            if (x != 0)
+            try
             {
-                for (int i = 1; i <= n; i++)
+                if (x != 0)
                 {
-                    giaiThua = giaiThua * i;
-                    luyThua = luyThua * x;
-                    s = s + giaiThua / luyThua;
+                    for (int i = 1; i <= n; i++)
+                    {
+                        giaiThua = giaiThua * i;
+                        luyThua = luyThua * x;
+                        s = s + giaiThua / luyThua;
+                    }
+                    Console.WriteLine("Tong S = " + s);
                 }
-                Console.WriteLine("Tong S = " + s);
-            }
 
-            else
-            {
-                if (n == 0)
-                {
-                    Console.WriteLine("S = 1");
-                }
                 else
                 {
-                    Console.WriteLine("Khong xac dinh tong S");
-                }
+                    if (n == 0)
+                    {
+                        Console.WriteLine("S = 1");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Khong xac dinh tong S");
+                    }
 
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
         }
     }
 }
