@@ -11,4 +11,20 @@
     Sorting an array means to arrange its elements in increasing order. 
     Write a program to sort an array. Use the "selection sort" algorithm
 
-2020-03-31
+2020-04-07
+    We are given a string containing a list of forbidden words and a text 
+    containing sone of these words. Write a program that replaces the 
+    forbidden words with asterisks. 
+    
+    Example:
+    Microsoft announced its next generation PHP compiler today. It is 
+    base on .NET Framework 4.0 and is implemented as a dynamic language
+    in CLR.
+
+    Words: "PHP, CLR, Microsoft"
+    
+    The expected result:
+    ********* announced its next generation *** compiler today. It is 
+    base on .NET Framework 4.0 and is implemented as a dynamic language
+    in ***.
+
